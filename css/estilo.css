@@ -1,3 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+header {
+  background-color: #15A4CE;
+}
+header .imgLogo {
+  width: 120px;
+  height: 120px;
+}
+header .navItem {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main .contenedorBtn {
+  text-align: center;
+  margin-top: 85px;
+}
+main .tituloPrincipal {
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+main .contenedorPrincipal {
+  background-color: #474B4C;
+  margin-top: 120px;
+  margin-left: 400px;
+  width: 1100px;
+}
+main .contenedorSecundario {
+  background-color: #A1A4A4;
+}
+main button a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+main .btnComprar {
+  background-color: #717171;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+main .btnComprar:hover {
+  background-color: #C48686;
+  color: black;
+  transform: scale(1.05);
+}
+main .tituloActividades {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+main .cardPrincipal {
+  margin-bottom: 20px;
+}
+main .tituloHoteleria {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+main .imgHotel {
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+main .hotel {
+  margin-bottom: 20px;
+}
+main .cajaHoteleria {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .textoPrincipal {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+  .contenedorPrincipal {
+    background-color: #474B4C;
+    margin-top: 120px;
+    margin-left: 10px;
+    width: 400px;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .contenedorPrincipal {
+    background-color: #474B4C;
+    margin-top: 120px;
+    margin-left: 16px;
+    width: 600px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1325px) {
+  .contenedorPrincipal {
+    background-color: #474B4C;
+    margin-top: 120px;
+    margin-left: 110px;
+    width: 800px;
+  }
+}
 
 /*# sourceMappingURL=estilo.css.map */
