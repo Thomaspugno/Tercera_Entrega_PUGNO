@@ -1,4 +1,4 @@
-* {
+body {
   margin: 0;
   padding: 0;
 }
@@ -88,28 +88,118 @@ main .textoPrincipal {
   margin-bottom: 80px;
 }
 
-@media (max-width: 600px) {
-  .contenedorPrincipal {
-    background-color: #474B4C;
-    margin-top: 120px;
-    margin-left: 10px;
-    width: 400px;
+.divContact {
+  margin-top: 40px;
+}
+.divContact .tituloContact {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.divContact .textoContact {
+  margin-top: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formularioContacto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.cajaContact {
+  margin-bottom: 15px;
+}
+.cajaContact label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.cajaContact input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.cajaContact input[type=email] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.cajaContact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  resize: vertical;
+}
+.cajaContact input[type=submit] {
+  background-color: #15A4CE;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Media Queries para celulares */
+@media (max-width: 767px) {
+  .cajaHoteleria {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .hotel {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-right: 10px;
+  }
+  .formularioContacto {
+    padding: 10px;
+  }
+  .tituloHoteleria {
+    margin: 40px;
+  }
+  .cardPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
-@media (min-width: 601px) and (max-width: 900px) {
-  .contenedorPrincipal {
-    background-color: #474B4C;
-    margin-top: 120px;
-    margin-left: 16px;
-    width: 600px;
+/* Media Queries para tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cajaHoteleria {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+  .hotel {
+    flex: 0 0 auto;
+    width: 50%;
+    margin-right: 10px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .tituloHoteleria {
+    margin: 40px;
+  }
+  .cardPrincipal {
+    margin: 50px;
   }
 }
-@media (min-width: 901px) and (max-width: 1325px) {
-  .contenedorPrincipal {
-    background-color: #474B4C;
-    margin-top: 120px;
-    margin-left: 110px;
-    width: 800px;
+/* Media Queries para desktops */
+@media (min-width: 1024px) {
+  .tituloHoteleria {
+    margin: 100px;
   }
 }
 
